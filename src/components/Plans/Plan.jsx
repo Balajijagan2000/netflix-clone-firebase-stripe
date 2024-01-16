@@ -93,7 +93,7 @@ const Plan = () => {
             if (sessionId) {
                 
               const stripe = await loadStripe(
-                "pk_test_51OUXQrSDAIqD5G8SVEsPe3qXa8Be1cH9VrWIbKd450AkzZCgdMLVKLJiiga24kWxG9rrohoN6SbomvmfayEJMMpf00oI7W2wTo"
+                "<STRIPE_KEY>"
               );
               stripe.redirectToCheckout({ sessionId });
               
