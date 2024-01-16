@@ -1,0 +1,57 @@
+.plans {
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+    padding: .5em;
+}
+.plans p:not(.plan p) {
+    border-bottom: .5px solid lightyellow;
+    font-size: 1.2rem;
+    font-weight:400 ;
+}
+.plans p span {
+    font-weight: 600;
+}
+.plan {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px solid green; */
+    padding: 1rem;
+    cursor: pointer;
+}
+.plan:hover {
+    filter:brightness(65%);
+}
+.plan button {
+
+    background-color: #E50914;
+    font-weight: 500;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: .2em .5em;
+    letter-spacing: 1.2px;
+    cursor: pointer;
+    
+}
+.plan button.active {
+    background-color: #fff;
+    color: #E50914;
+    cursor:not-allowed;
+}
+@media screen and (max-width:540px) {
+    .plan {
+        font-size: .8rem;
+    }
+    .plan button {
+        font-size: .8rem;
+        padding: .2em .3em;
+        margin-left: 1em;
+        border-radius: .1em;
+    }
+    .plan__info {
+        font-size: .8rem;
+    }
+}

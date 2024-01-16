@@ -1,0 +1,114 @@
+.signup {
+    color: #fff;
+    z-index: 1000;
+   
+    width: 80%;
+    margin: auto;
+
+}
+.signup h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding:.2em;
+}
+.signup p {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+    padding:.2em;
+}
+.signup h2 {
+    font-size: 1.3rem;
+    font-weight: 500;
+    text-align: center;
+    padding: .2em;
+}
+.signup-form {
+
+    width: 100%;
+    max-width: 540px;
+    margin: auto;
+   
+    
+}
+.signup-form .form-group {
+
+    display: flex;
+    flex-direction: row;
+    padding: .3em;
+    gap:1em;
+    
+    
+    
+}
+.signup .form-group div {
+    
+    background: rgba(0,0,0,.7);
+    width: 95%;
+    height: 60px;
+    position: relative;
+    padding:0 .4em;
+}
+.signup .form-group div input {
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    color: white;
+    background: transparent;
+    outline: none;
+    border: none;
+    position: absolute;
+    z-index: 1000;
+    bottom:10px;
+}
+.signup .form-group div label {
+    font-size: 1.4rem;
+    font-weight: 300;
+    position: absolute;
+    transform: translateY(15px);
+    transition: all .3s ease;
+    padding: .2em 0;
+    pointer-events:visible;
+}
+
+.signup .form-group div input:focus~label {
+    font-size: .9rem;
+    transform: translateY(0px);
+}
+.signup .form-group button {
+    background-color: #E50914;
+    font-weight: 500;
+    font-size: 1.1rem;
+    outline: none;
+    border: none;
+    color: #fff;
+    padding: 0 .5em;
+    letter-spacing: 1.2px;
+    border-radius: .3em;
+    width: 250px;
+
+}
+.signup .form-group button:hover {
+    transition: all .3s ease;
+    background-color: #fff;
+    color: #E50914;
+}
+@media screen and (max-width:540px) {
+    .signup .form-group {
+        flex-direction: column;
+    }
+    .signup-form .form-group div {
+        width: 100%;
+    }
+    .signup .form-group button {
+        width: 100%;
+        padding: .6em .5em;
+    }
+    .signup h1 {
+        font-size: 2rem;
+    }
+    .signup h2 {
+        font-size: 1rem;
+    }
+}

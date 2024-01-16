@@ -1,0 +1,71 @@
+.row__container {
+
+    display: flex;
+    flex-direction: column;
+    padding: .7em;
+    color: #fff;
+    z-index: 500;
+    position: relative;
+    margin-top: .5m;
+    
+}
+.row__container .row {
+
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    gap:1em;
+    max-height: 200px;
+    margin-top: .5em;
+    margin-left: .5em;
+    scroll-behavior: smooth;
+    
+    
+    
+
+}
+.row__container .row__element {
+
+
+    position: relative;
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+
+}
+.card__overlay {
+    position: absolute;
+    bottom:-100%;
+    left: 0;
+    min-width: 100%;
+    min-height: 50px;
+    background-color: rgba(0,0,0,.5);
+    color:#fff;
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    transition: all .3s ease;
+    text-align: center;
+    padding: .2em;
+}
+.row__container .row::-webkit-scrollbar {
+    display: none;
+}
+.row__container .row__element img {
+    border-radius: .3em;
+    max-height: 200px;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease;
+    transform: scale(.9);
+    padding: .3em;
+    cursor: pointer; 
+  
+}
+.row__container .row .row__element:hover>img{
+    transform: scale(1);
+}
+.row__container .row .row__element:hover>div {
+    bottom: 0;
+}
